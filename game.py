@@ -1,12 +1,7 @@
-import sqlite3
-
-conn = sqlite3.connect("users.db")
-cursor = conn.cursor()
-
-username = input("Username: ")
-
 # ❌ Vulnerable
-query = f"SELECT * FROM users WHERE username = '{username}'"
-cursor.execute(query)
+API_KEY = "sk_test_123456789abcdef"
 
-print(cursor.fetchall())
+def connect():
+    print("Connecting with API key:", API_KEY)
+
+connect()
