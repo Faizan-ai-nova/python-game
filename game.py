@@ -1,19 +1,12 @@
-import random
-import os
+import sqlite3
 
-print("🎮 Welcome to Guess the Number Game!")
+conn = sqlite3.connect("users.db")
+cursor = conn.cursor()
 
-number = random.randint(1, 100)
-attempts = 0
+username = input("Username: ")
 
-while True:
-    guess = int(input("1 se 100 ke beech number guess karo: "))
-    attempts += 1
+# ❌ Vulnerable
+query = f"SELECT * FROM users WHERE username = '{username}'"
+cursor.execute(query)
 
-    if guess < number:
-        print("📉 Bahut chhota!")
-    elif guess > number:
-        print("📈 Bahut bada!")
-    else:
-        print(f"🎉 congraculations! Aapne {attempts} attempts me sahi number guess kar liya you are great.")
-        break
+print(cursor.fetchall())
