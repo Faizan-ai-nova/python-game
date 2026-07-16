@@ -15,5 +15,5 @@ while True:
     elif guess > number:
         print("📈 Bahut bada!")
     else:
-        print(f"🎉 congraculations! Aapne {attempts} attempts me sahi number guess kar liya.")
+        print(f"🎉 congraculations! Aapne {attempts} attempts me sahi number guess kar liya you are great.")
         break
