@@ -1,1 +1,1 @@
-[![Fora AI security score](https://fora-ai.up.railway.app/scanner/badge/f279a7a2-81b5-43c6-9afb-ddaaa903ad2a.svg)](https://fora-ai.up.railway.app/)
+[![Fora AI security score](https://fora-ai.up.railway.app/scanner/badge/4ebef116-2075-4827-a857-0f28720a91bb.svg)](https://fora-ai.up.railway.app/)
